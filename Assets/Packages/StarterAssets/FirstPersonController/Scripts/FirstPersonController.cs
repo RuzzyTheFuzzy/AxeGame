@@ -50,6 +50,7 @@ namespace StarterAssets
         public float TopClamp = 90.0f;
         [Tooltip("How far in degrees can you move the camera down")]
         public float BottomClamp = -90.0f;
+        public Axe axe;
 
         // cinemachine
         private float _cinemachineTargetPitch;
@@ -107,11 +108,21 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+            Attack();
         }
 
         private void LateUpdate()
         {
             CameraRotation();
+        }
+
+        private void Attack()
+        {
+            if (_input.attack)
+            {
+                axe.Swing();
+                _input.attack = false;
+            }
         }
 
         private void GroundedCheck()

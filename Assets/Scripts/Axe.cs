@@ -5,26 +5,10 @@ using UnityEngine.InputSystem;
 
 public class Axe : MonoBehaviour
 {
-    public InputAction axe;
     [SerializeField] private Animator animator;
     [SerializeField] private HitCheck hitCheck;
 
-    private void Awake()
-    {
-        // axe = axeInput.Player.Swing;
-        axe.started += context => Swing();
-    }
-    private void OnEnable()
-    {
-        axe.Enable();
-    }
-
-    private void OnDisable()
-    {
-        axe.Disable();
-    }
-
-    private void Swing()
+    public void Swing()
     {
         if (animator.GetBool("Can Swing"))
         {

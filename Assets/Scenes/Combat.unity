@@ -1022,6 +1022,10 @@ PrefabInstance:
       propertyPath: tMP_Text
       value: 
       objectReference: {fileID: 768311856}
+    - target: {fileID: 8563429361624427555, guid: b6ba35f0ac23a494fbb1f40cd2c20d51, type: 3}
+      propertyPath: RotationSpeed
+      value: 1.07
+      objectReference: {fileID: 0}
     - target: {fileID: 8563429361624427556, guid: b6ba35f0ac23a494fbb1f40cd2c20d51, type: 3}
       propertyPath: m_Name
       value: Player 1
@@ -1032,7 +1036,7 @@ PrefabInstance:
       objectReference: {fileID: -944628639613478452, guid: 941471952ce2ee64bb8eca1d17c72713, type: 3}
     - target: {fileID: 8563429361624427560, guid: b6ba35f0ac23a494fbb1f40cd2c20d51, type: 3}
       propertyPath: m_DefaultControlScheme
-      value: KeyboardMouse
+      value: Gamepad
       objectReference: {fileID: 0}
     - target: {fileID: 8563429361624427560, guid: b6ba35f0ac23a494fbb1f40cd2c20d51, type: 3}
       propertyPath: m_NeverAutoSwitchControlSchemes
